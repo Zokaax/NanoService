@@ -1,19 +1,31 @@
 {
   "name": "nanoservice",
+  "version": "1.0.0",
+  "description": "NanoService - Aplicaci n web para gesti n de servicios",
   "type": "module",
   "private": true,
+  "engines": {
+    "node": ">=14.x"
+  },
   "scripts": {
     "dev": "bun --watch app.js",
-    "start": "bun app.js"
+    "start": "node app.js",
+    "build": "echo 'Build script ejecutado'"
+  },
+  "dependencies": {
+    "@vercel/node": "^4.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "bun-types": "^1.0.0"
   },
-  "dependencies": {
-    "body-parser": "^2.2.0",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
-    "ejs": "^3.1.10",
-    "express": "^5.1.0"
-  }
+  "keywords": [
+    "nanoservice",
+    "api",
+    "vercel"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT"
 }
